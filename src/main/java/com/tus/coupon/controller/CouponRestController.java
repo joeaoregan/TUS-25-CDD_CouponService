@@ -15,7 +15,8 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 import com.tus.coupon.ApplyLoad;
-
+import com.tus.coupon.CpuStressFactorial;
+import com.tus.coupon.CpuStressFibonacci;
 import com.tus.coupon
 .model.Coupon;
 import com.tus.coupon.repo.CouponRepo;
@@ -50,7 +51,19 @@ public class CouponRestController {
 		System.out.println(code);
 			ApplyLoad cpuStuff = new ApplyLoad(); // Test 1 read file many times
 			cpuStuff.start();
-			
+			cpuStuff.start();
+
+			CpuStressFactorial fac = new CpuStressFactorial(); // Test 2 factorial
+//			fac.start();
+
+			CpuStressFibonacci fib = new CpuStressFibonacci(); // Test 3 fibonacci
+//			try {
+//				fib.doit();
+//			} catch (InterruptedException e) {
+//				// TODO Auto-generated catch block
+//				e.printStackTrace();
+//			}
+
 			return repo.findByCode(code);
 	}
 	

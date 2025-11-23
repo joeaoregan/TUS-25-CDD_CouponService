@@ -1,4 +1,6 @@
 coverage/
+target/
 .vscode/
 
 *.class
+target/classes/
