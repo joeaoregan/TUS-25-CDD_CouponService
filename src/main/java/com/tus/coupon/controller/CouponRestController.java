@@ -5,22 +5,21 @@ import java.util.List;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
-// import org.springframework.web.bind.annotation.DeleteMapping;
+//import org.springframework.web.bind.annotation.DeleteMapping;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
-// import org.springframework.web.bind.annotation.RequestMethod;
+//import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RestController;
 
 import com.tus.coupon.ApplyLoad;
 import com.tus.coupon.CpuStressFactorial;
 import com.tus.coupon.CpuStressFibonacci;
-import com.tus.coupon
-.model.Coupon;
-import com.tus.coupon.repo.CouponRepo;
 
+import com.tus.coupon.model.Coupon;
+import com.tus.coupon.repo.CouponRepo;
 
 @RestController
 @RequestMapping("/couponapi")
@@ -28,46 +27,43 @@ public class CouponRestController {
 //comment for version control
 	@Autowired
 	CouponRepo repo;
-	
-	//this is called constructor based injection.
+
+	// this is called constructor based injection.
 	// you can now use normal mocks to test
 	/*
 	 * public CouponRestController(CouponRepo repo) { this.repo=repo; }
 	 */
-	//setter injection
+	// setter injection
 //	@Autowired
 //	public void setRepo(CouponRepo repo) {
 //		this.repo=repo;
 //	}
-	
+
 	@PostMapping(value = "/coupons")
 	public ResponseEntity<Coupon> create(@RequestBody Coupon coupon) {
-		//return repo.save(coupon);
+		// return repo.save(coupon);
 		return new ResponseEntity<>(repo.save(coupon), HttpStatus.OK);
 	}
-	
+
 	@GetMapping("/coupons/{code}")
 	Coupon getCouponByCouponCode(@PathVariable String code) {
 		System.out.println(code);
-			ApplyLoad cpuStuff = new ApplyLoad(); // Test 1 read file many times
-			cpuStuff.start();
-			cpuStuff.start();
+		ApplyLoad cpuStuff = new ApplyLoad(); // Test 1 read file many times
+		cpuStuff.start();
 
-			CpuStressFactorial fac = new CpuStressFactorial(); // Test 2 factorial
+		CpuStressFactorial fac = new CpuStressFactorial(); // Test 2 factorial
 //			fac.start();
 
-			CpuStressFibonacci fib = new CpuStressFibonacci(); // Test 3 fibonacci
+		CpuStressFibonacci fib = new CpuStressFibonacci(); // Test 3 fibonacci
 //			try {
 //				fib.doit();
 //			} catch (InterruptedException e) {
 //				// TODO Auto-generated catch block
 //				e.printStackTrace();
 //			}
-
-			return repo.findByCode(code);
+		return repo.findByCode(code);
 	}
-	
-	
+
 	@GetMapping(value = "/coupons")
 	public List<Coupon> getAllCoupons() {
 		return repo.findAll();

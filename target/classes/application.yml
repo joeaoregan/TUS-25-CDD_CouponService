@@ -3,9 +3,13 @@ spring:
     hibernate:
       ddl-auto: update
   datasource:
-    url: jdbc:mysql://localhost:3306/servicedb
+    url: jdbc:mysql://docker-mysql:3306/servicedb
     username: root
-    password: ""
+    password: "test1234"
+# url: jdbc:mysql://localhost:3306/servicedb
+#    url: jdbc:mysql://servicedb.cmzmc86oaa3v.us-east-1.rds.amazonaws.com:3306/servicedb
+#    username: admin
+#    password: "Bppwzej3bKcp"
 server:
   port: 9091
   
