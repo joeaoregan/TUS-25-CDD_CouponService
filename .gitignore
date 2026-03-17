@@ -5,6 +5,10 @@ target/
 *.class
 target/classes/
 
+.project
 
-.settings/
 mysql-data/
+
+# Eclipse project files
+.classpath
+.settings/
