@@ -5,6 +5,8 @@
 
 ---
 
+<a href="https://youtu.be/QPC0n3RcKgY" target="_blank"><img src="src\main\resources\static\asg_scaling.jpg" title="CDD CA1 Demo" width="200"/></a>
+
 # AWS Microservice: Auto Scaling & Load Balancing Deployment
 ## Project Overview
 This project demonstrates the deployment of a stateless microservice (e.g., a coupon service) on AWS using a highly available and scalable architecture. The goal is to manage unpredictable and "spiky" incoming traffic through horizontal scaling and automated load distribution.
