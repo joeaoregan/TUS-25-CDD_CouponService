@@ -9,8 +9,8 @@
 ![Maven](https://img.shields.io/badge/Maven-C71A36?style=for-the-badge&logo=apache-maven&logoColor=white)
 ![Docker](https://img.shields.io/badge/Docker-2496ED?style=for-the-badge&logo=docker&logoColor=white)
 
-![GitHub repo size](https://img.shields.io/github/repo-size/joeaoregan/jor-tetris?color=orange)
-![GitHub last commit](https://img.shields.io/github/last-commit/joeaoregan/jor-tetris?color=blue)
+![GitHub repo size](https://img.shields.io/github/repo-size/joeaoregan/TUS-25-CDD_CouponService?color=orange)
+![GitHub last commit](https://img.shields.io/github/last-commit/joeaoregan/TUS-25-CDD_CouponService?color=blue)
 
 ### Technological University of the Shannon
 #### MSc Software Development with Cloud Native Computing
