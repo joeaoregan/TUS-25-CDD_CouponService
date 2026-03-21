@@ -11,6 +11,8 @@
 
 ![GitHub repo size](https://img.shields.io/github/repo-size/joeaoregan/TUS-25-CDD_CouponService?color=orange)
 ![GitHub last commit](https://img.shields.io/github/last-commit/joeaoregan/TUS-25-CDD_CouponService?color=blue)
+![Stars](https://img.shields.io/github/stars/joeaoregan/TUS-25-CDD_CouponService?style=social)
+
 
 ### Technological University of the Shannon
 #### MSc Software Development with Cloud Native Computing
@@ -52,3 +54,13 @@ This project demonstrates the deployment of a stateless microservice (e.g., a co
 ## Deliverables
 - **Technical Report (30%)**: Documentation including an introduction to scaling concepts, configuration screenshots, CloudWatch test results, and an evaluation of costs and sustainability.
 - **Screencast (70%)**: A maximum 5-minute video featuring a camera-on presentation. It must include text overlays and diagrams to explain the deployment and demonstrate the live scaling process
+
+---
+
+<div align="center">
+
+2025 Joe O'Regan &bull; TUS | Container Design and Deployment
+
+[⬆️ Back to Top](#)
+
+</div>
